@@ -1,299 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=1024">
-    <title>CaptainFreak - Books</title>
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="css/books.css">
-
-    <style type="text/css">
-      a {
-        color: #74B99F;
-      }
-    </style>
-
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Books - Shoeb Patel</title>
+  <meta name="description" content="Books Shoeb Patel has read, with ratings and short notes.">
+  <link rel="canonical" href="https://shoebpatel.com/books.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shoeb Patel">
+  <meta property="og:title" content="Books - Shoeb Patel">
+  <meta property="og:description" content="Books Shoeb Patel has read, with ratings and short notes.">
+  <meta property="og:url" content="https://shoebpatel.com/books.html">
+  <meta property="og:image" content="https://shoebpatel.com/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Theme: apply the reader's saved choice before first paint. No tracking, nothing leaves the page.
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.className = document.documentElement.className.replace('no-js', '');
+    })();
+  </script>
 </head>
+<body>
 
-  <body>
+<header>
+  <div class="header-text">
+  <h1>Books</h1>
+  <p class="place">A reading list, with ratings and the occasional note.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch between light and dark theme" title="Switch theme">
+      <svg class="when-light" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="when-dark" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </nav>
+  </div>
+</header>
 
-    <h1>
-      Books**
-    </h1>
-    <p>
-      (Geek's Entertainment)
-    </p>
-    <main>
-      <table>
-        <thead>
-          <tr>
-            <th>
-              Book Name
-            </th>
-            <th>
-              Author
-            </th>
-            <th>
-              Rating*
-            </th>
-            <th>
-              Key Takeaways*
-            </th>
-          </tr>
-        </thead>
-        <tbody>
+<main>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              The Art of Software Security Assessment<br> - Identifying and Preventing Software Vulnerabilities
-            </td>
-            <td data-title='E-mail'>
-              John McDonald, Justin Schuh, and Mark Dowd
-            </td>
-            <td class='select'>
-              * * * * * 
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+<table class="books">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Rating</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              The Tangled Web <br> - A Guide to Securing Modern Web Applications
-            </td>
-            <td data-title='E-mail'>
-              Michał Zalewski
-            </td>
-            <td class='select'>
-              * * * * * 
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>The Art of Software Security Assessment: Identifying and Preventing Software Vulnerabilities</td>
+      <td>Mark Dowd, John McDonald, Justin Schuh</td>
+      <td class="rating" data-label="Rating">★★★★★</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              Web Application Obfuscation
-            </td>
-            <td data-title='E-mail'>
-              Mario Heiderich, Eduardo Alberto Vela Nava,<br> Gareth Heyes, David Lindsay
-            </td>
-            <td class='select'>
-              * * * * * 
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>The Tangled Web: A Guide to Securing Modern Web Applications</td>
+      <td>Michał Zalewski</td>
+      <td class="rating" data-label="Rating">★★★★★</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              Building Secure & Reliable Systems
-            </td>
-            <td data-title='E-mail'>
-              Google Security
-            </td>
-            <td class='select'>
-              * * * * * 
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>Web Application Obfuscation</td>
+      <td>Mario Heiderich, Eduardo Alberto Vela Nava, Gareth Heyes, David Lindsay</td>
+      <td class="rating" data-label="Rating">★★★★★</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              How to Solve it
-            </td>
-            <td data-title='E-mail'>
-              George Pólya
-            </td>
-            <td class='select'>
-              * * * * * 
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>Building Secure and Reliable Systems</td>
+      <td>Heather Adkins et al., Google</td>
+      <td class="rating" data-label="Rating">★★★★★</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              Algorithms to Live By <br> - The Computer Science of Human Decisions
-            </td>
-            <td data-title='E-mail'>
-              Brian Christian and Tom Griffiths
-            </td>
-            <td class='select'>
-              * * * *
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>The Web Application Hacker's Handbook: Discovering and Exploiting Security Flaws</td>
+      <td>Dafydd Stuttard, Marcus Pinto</td>
+      <td class="rating" data-label="Rating">★★★★★</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              The Phoenix Project
-            </td>
-            <td data-title='E-mail'>
-              Gene Kim Et al.
-            </td>
-            <td class='select'>
-              * * * * 
-            </td>
-            <td data-title='Provider Name'>
-              Big picture insights of how Tech and Business go hand in hand with DevOps<br>
-              making it possible to deliver products at speed. No technicalities of<br>
-              DevOps. Funnily Bashes InfoSec teams, which makes me laugh everytime when<br>
-              Sec Teams create a blocker for Devs on silly items. (But hey, Sec Teams can<br>
-              never be enough paranoid.)
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>Hacking: The Art of Exploitation, 2nd ed.</td>
+      <td>Jon Erickson</td>
+      <td class="rating" data-label="Rating">★★★★★</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              Securing DevOps: Security in the Cloud
-            </td>
-            <td data-title='E-mail'>
-              Julien Vehent
-            </td>
-            <td class='select'>
-              * * * *
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>How to Solve It</td>
+      <td>George Pólya</td>
+      <td class="rating" data-label="Rating">★★★★★</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              The Art of Exploitation 2e
-            </td>
-            <td data-title='E-mail'>
-              Jon Erickson
-            </td>
-            <td class='select'>
-              * * * * *
-            </td>
-            <td data-title='Provider Name'>
-              Notes are <a href="https://github.com/CaptainFreak/HackerNotes/blob/master/Books/Art-of-Exploitaion-2e.md">here.</a>
-            </td>
-          </tr>
-          <!-- Book End -->
-          
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              iOS Hacker's Handbook
-            </td>
-            <td data-title='E-mail'>
-              Charlie Miller Et al.
-            </td>
-            <td class='select'>
-              TBD
-            </td>
-            <td data-title='Provider Name'>
-              <a href="https://github.com/CaptainFreak/HackerNotes/blob/master/Books/iOS-hackers-handbook.md">Here</a> are the notes. 
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>Securing DevOps: Security in the Cloud</td>
+      <td>Julien Vehent</td>
+      <td class="rating" data-label="Rating">★★★★☆</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              The Web Application Hacker's Handbook <br> - Discovering and Exploiting Security Flaws
-            </td>
-            <td data-title='E-mail'>
-              Dafydd Stuttard and Marcus Pinto
-            </td>
-            <td class='select'>
-              * * * * * 
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>OAuth 2 in Action</td>
+      <td>Justin Richer, Antonio Sanso</td>
+      <td class="rating" data-label="Rating">★★★★☆</td>
+      <td class="notes">Quick read; gives concrete terminology and mental models for OAuth 2.</td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              Permanent Record
-            </td>
-            <td data-title='E-mail'>
-              Edward Snowden
-            </td>
-            <td class='select'>
-              TBD
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>The Phoenix Project</td>
+      <td>Gene Kim, Kevin Behr, George Spafford</td>
+      <td class="rating" data-label="Rating">★★★★☆</td>
+      <td class="notes">Big-picture view of how technology and business move together with DevOps.
+        No technical depth. It pokes fun at security teams that block developers over trivial
+        things, which still makes me laugh, and is worth remembering when we are the blocker.</td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              Surely You're Joking, Mr. Feynman
-            </td>
-            <td data-title='E-mail'>
-              Richard Feynman
-            </td>
-            <td class='select'>
-              * * * *
-            </td>
-            <td data-title='Provider Name'>
-              TBD
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>Algorithms to Live By: The Computer Science of Human Decisions</td>
+      <td>Brian Christian, Tom Griffiths</td>
+      <td class="rating" data-label="Rating">★★★★☆</td>
+      <td class="notes"></td>
+    </tr>
 
+    <tr>
+      <td>Surely You're Joking, Mr. Feynman!</td>
+      <td>Richard Feynman</td>
+      <td class="rating" data-label="Rating">★★★★☆</td>
+      <td class="notes"></td>
+    </tr>
 
-          <!-- Book start -->
-          <tr>
-            <td data-title='Provider Name'>
-              OAuth 2 in Action
-            </td>
-            <td data-title='E-mail'>
-              Antonio Sanso and Justin Richer
-            </td>
-            <td class='select'>
-              * * * *
-            </td>
-            <td data-title='Provider Name'>
-              Easy and Quick Read, gives concrete info & terminilogy related to Oauth2.
-            </td>
-          </tr>
-          <!-- Book End -->
+    <tr>
+      <td>iOS Hacker's Handbook</td>
+      <td>Charlie Miller et al.</td>
+      <td class="rating" data-label="Rating">not rated</td>
+      <td class="notes"></td>
+    </tr>
 
-        </tbody>
-      </table>
-      </div>
-    </main>
-    <p style="text-align:left;">* In my opinion</p> 
-    <p style="text-align:left;">**Inspired by <a href="http://taviso.decsystem.org/books.html">@tavis</a></p>
-    <div class="footer">
-      <a href="/"><p>Home</p></a>
-    </div>
-  </body>
+    <tr>
+      <td>Permanent Record</td>
+      <td>Edward Snowden</td>
+      <td class="rating" data-label="Rating">not rated</td>
+      <td class="notes"></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<p class="note" style="margin-top:1.25rem">
+  Ratings are personal.
+</p>
+
+</main>
+
+<footer>
+  <p><a href="index.html">Home</a></p>
+</footer>
+
+<script>
+  document.getElementById('theme-toggle').addEventListener('click', function (e) {
+    e.preventDefault();
+    var root = document.documentElement;
+    var current = root.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
+</body>
+</html>

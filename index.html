@@ -1,75 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CaptainFreak</title>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shoeb Patel - Application Security Engineer, London</title>
+  <meta name="description" content="Shoeb Patel, application security engineer at Amazon, London. Threat modelling, secure design review, and penetration testing of large-scale distributed systems and AI agents.">
+  <meta name="author" content="Shoeb Patel">
+  <link rel="canonical" href="https://shoebpatel.com/">
+  <link rel="icon" href="images/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Theme: apply the reader's saved choice before first paint. No tracking, nothing leaves the page.
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.className = document.documentElement.className.replace('no-js', '');
+    })();
+  </script>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/favicon.ico"/>
-    
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
-<link rel="stylesheet" href="css/index.css">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Shoeb Patel">
+  <meta property="og:title" content="Shoeb Patel - Application Security Engineer, London">
+  <meta property="og:description" content="Application security engineer at Amazon, London. Threat modelling, secure design review, and penetration testing of large-scale distributed systems and AI agents.">
+  <meta property="og:url" content="https://shoebpatel.com/">
+  <meta property="og:image" content="https://shoebpatel.com/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Shoeb Patel, Application Security Engineer, Amazon, London">
+  <meta property="profile:first_name" content="Shoeb">
+  <meta property="profile:last_name" content="Patel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shoeb Patel - Application Security Engineer, London">
+  <meta name="twitter:description" content="Application security engineer at Amazon, London. Threat modelling, secure design review, and penetration testing of large-scale distributed systems and AI agents.">
+  <meta name="twitter:image" content="https://shoebpatel.com/images/og.png">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shoeb Patel",
+    "url": "https://shoebpatel.com/",
+    "image": "https://shoebpatel.com/images/og.png",
+    "description": "Application security engineer at Amazon, London. Threat modelling, secure design review, and penetration testing of large-scale distributed systems and AI agents.",
+    "email": "mailto:patelshoeb4@gmail.com",
+    "jobTitle": "Security Engineer II",
+    "worksFor": { "@type": "Organization", "name": "Amazon", "url": "https://www.amazon.com/" },
+    "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "National Institute of Technology Goa" },
+    "knowsAbout": [
+      "Application security",
+      "Threat modelling",
+      "Secure code review",
+      "Penetration testing",
+      "Cloud security",
+      "LLM and AI agent security",
+      "Vulnerability research"
+    ],
+    "sameAs": [
+      "https://github.com/shoebpate1",
+      "https://www.linkedin.com/in/iamshoebpatel",
+      "https://hackerone.com/silentecho_",
+      "https://bugcrowd.com/Shoeb_",
+      "https://research.shoebpatel.com/",
+      "https://blog.shoebpatel.com/",
+      "https://ctftime.org/team/60327/"
+    ]
+  }
+  </script>
 </head>
+<body>
 
-  <body>
-    
-    <div id="ht-tm-jumbotron" style="text-align: center;position: relative;top: 50%;transform: translateY(5%);">
-      <div class="jumbotron bg-transparent mb-0 ht-tm-notrounded" style="padding-bottom: 10px">
-        <div class="container">
-          <div class="ht-tm-header">
-            <div class="row">
-              <div class="col-xl-12">
-                <h1 class="display-2">Shoeb Pate<span class="vim-caret">l</span></h1>
-                <div class="mb-3 text-mono text-success" style="text-align: right;padding-right: 20%">a.k.a. Captain</div>
+<header>
+  <img class="headshot" src="images/shoeb.jpg" width="130" height="130" alt="Shoeb Patel">
+  <div class="header-text">
+  <h1>Shoeb Patel</h1>
+  <p class="role">Application Security Engineer, Amazon</p>
+  <p class="place">London, United Kingdom</p>
+  <nav>
+    <a href="mailto:patelshoeb4@gmail.com">Email</a>
+    <a href="Shoeb_Patel_Security_Engineer_1608-web.pdf">CV (PDF)</a>
+    <a href="https://github.com/shoebpate1">GitHub</a>
+    <a href="https://www.linkedin.com/in/iamshoebpatel">LinkedIn</a>
+    <a href="https://research.shoebpatel.com/">Blog</a>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch between light and dark theme" title="Switch theme">
+      <svg class="when-light" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="when-dark" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </nav>
+  </div>
+</header>
 
-                <img src="./images/sg.png" style="width: 350px">
+<main>
 
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<h2 id="about">About</h2>
 
-        <div class="ht-tm-codeblock ht-tm-btn-replaceable" style="text-align: center; margin-bottom: 50px; margin-top: 50px">
-        <div class="row">
-          <div class="col-md-12" id="buttons">
-            <!--
-            <a href="https://portfolio.shoebpatel.com/" class="ht-tm-element btn btn-outline-primary">Portfolio</a>
-            -->
-            <a href="https://research.shoebpatel.com/" class="ht-tm-element btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Blog</a>
-            <a href="https://github.com/shoebpate1" class="ht-tm-element btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Projects</a>
-            <a href="books.html" class="ht-tm-element btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Books</a>
-            <a href="https://ctftime.org/team/60327" class="ht-tm-element btn btn-outline-primary" target="_blank" rel="noopener noreferrer">Underdawgs</a>
-    
-            <!-- <a href="https://portfolio.shoebpatel.com/Shoeb_Patel_Resume_Senior_Security_Engineer.pdf" class="ht-tm-element btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
-              <span class="fa fa-download mr-2"></span>
-              Resume
-            </a> -->
-            <!-- <div class="ht-tm-element btn btn-outline-primary dropdown">
-              <span class="fa fa-download mr-2"></span>
-              Resume
-              <div class="dropdown-content">
-                <a href="https://portfolio.shoebpatel.com/resume.pdf" target="_blank" rel="noopener noreferrer"> <span class="fa fa-file mr-2"></span> One Pager</a>
-                <a href="https://portfolio.shoebpatel.com/DetailedResume.pdf" target="_blank" rel="noopener noreferrer"> <span class="fa fa-files-o mr-2"></span> Detailed</a>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
+<p>
+I am an application security engineer at Amazon in London. I work on the Corporate Technology
+security team and own security for the web applications, APIs and AI systems behind HR, Finance
+and Legal. Before that I spent 3 years in <abbr title="Amazon Web Services">AWS</abbr> as the
+application security owner for the
+<a href="https://aws.amazon.com/getting-started/aws-networking-essentials/">networking services</a>:
+VPC, Load Balancing, Transit Gateway, PrivateLink, VPC Lattice and Cloud WAN, supporting 2000+
+engineers.
+</p>
+
+<p>
+Day to day I do threat modelling, code review, and security testing, and
+automate the boring parts. The bugs I enjoy hunting most are design and authorisation flaws:
+broken object-level and function-level access checks and confused deputies. To scale that, I've
+encoded my review approach into Claude Code skills and PR-time checks that review every change
+across the portfolio against my own rules, an idea I first wrote about at Flipkart in
+<a href="https://research.shoebpatel.com/2022/04/19/How-Flipkart-Reacts-to-Security-Vulnerabilities/">How
+Flipkart Reacts to Security Vulnerabilities</a>.
+</p>
+
+<p>
+I have worked in application security for 7 years. Before Amazon I was a senior security
+engineer at <a href="https://www.flipkart.com/">Flipkart</a> in Bangalore, owning security for the Seller and Support platforms, and before
+that one of the first hires on the security team at <a href="https://www.browserstack.com/">BrowserStack</a> in Mumbai. I got my start through
+Google Summer of Code, building challenges for
+<a href="https://owasp.org/www-project-juice-shop/">OWASP Juice Shop</a>, and came back the next
+year as a mentor. I studied computer science at
+<a href="https://www.nitgoa.ac.in/"><abbr title="National Institute of Technology">NIT</abbr> Goa</a>
+and moved to the UK in 2022.
+</p>
+
+<p>
+Outside of work I do vulnerability research. I have reported issues to 30+
+organisations, including Google, AWS, the U.S. Department of Defense, GitHub Security Lab, Oracle,
+Intel and Mastercard, hold 2 CVEs
+(<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-32817">CVE-2021-32817</a>,
+<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-22255">CVE-2021-22255</a>), and have contributed
+to OWASP Juice Shop, OWASP ZAP and other open-source security tools. I founded and captained the
+CTF team UnderDawgs from 2019 to 2021.
+</p>
+
+<!--
+<p>
+<strong>I am currently exploring senior individual-contributor roles (Staff / Lead Security
+Engineer) in London.</strong> If you are building something and think I could help, please email me.
+</p>
+-->
 
 
+<h2 id="experience">Experience</h2>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+<dl class="cv">
+
+  <dt>2025 - present</dt>
+  <dd>
+    <span class="where">Amazon</span>, Corporate Technology, <span class="what">Security Engineer II, London</span>
+    <p>
+      Application security for the org's HR, Finance and Legal systems: threat modelling, design and
+      code review, and penetration testing of new web applications, APIs and AI products, including
+      prompt injection, <abbr title="Model Context Protocol">MCP</abbr> attack surface and
+      authorisation architecture for agents.
+    </p>
+    <ul>
+      <li>Moved security review into the pull request: built a multi-agent review workflow and the
+        org-wide detection ruleset behind it, which baselines each repository and then flags new
+        issues and broken invariants on every change. Review time went from about a month to a week
+        across 30+ repositories.</li>
+      <li>Security owner for an internal legal AI platform and for Amazon's identity-provider
+        consolidation, finding and getting fixed a confused-deputy flaw in the former and a
+        cross-tenant authorisation flaw in the latter before rollout.</li>
+      <li>Led bot-abuse mitigation for Amazon's public hiring portal, replacing several years of
+        point fixes with a single layered strategy and the metrics to measure it.</li>
+      <li>Wrote the security training now given to every new apprentice engineer in the org.</li>
+    </ul>
+  </dd>
+
+  <dt>2022 - 2025</dt>
+  <dd>
+    <span class="where">Amazon Web Services</span>, <span class="what">Security Engineer II, London</span>
+    <p>
+      Application security owner for AWS networking services (VPC, Elastic Load Balancing, Transit
+      Gateway, VPC Lattice, Cloud WAN): threat modelling, architecture and code review, and
+      penetration testing across a portfolio serving 2000+ engineers.
+    </p>
+    <ul>
+      <li>Owned a full-scope security assessment of Transit Gateway, mapping an undocumented
+        architecture end to end and surfacing 53 issues.</li>
+      <li>Influenced early-stage design of high-scale distributed systems, negotiating security
+        trade-offs with service teams and leadership, and found critical flaws in production APIs
+        that had been present since launch.</li>
+      <li>Found a remote code execution issue in a component deployed across thousands of internal
+        services.</li>
+    </ul>
+  </dd>
+
+  <dt>2019 - 2022</dt>
+  <dd>
+    <span class="where">Flipkart</span>, <span class="what">Security Engineer, then Senior Security Engineer (from Aug 2021), Bangalore</span>
+    <p>
+      Application security owner for the Seller and Support platform teams: threat models,
+      architecture and code reviews across web applications, microservices, the Kubernetes platform
+      and mobile apps.
+    </p>
+    <ul>
+      <li>Designed the vulnerability feedback loop: every reported bug goes through root-cause
+        analysis, variant analysis, a centralised fix, a permanent detection query in the scanning
+        suite, and developer training material.</li>
+      <li>Deployed CodeQL across the top 50 repositories (10+ critical, 100+ valid findings) and led
+        the triage programme.</li>
+      <li>Ran the private, invite-only bug bounty programme from triage to patch verification, and
+        started an internal red team on the same model.</li>
+      <li>Built and hosted twice-yearly internal CTFs from real vulnerabilities found on Flipkart assets.</li>
+    </ul>
+  </dd>
+
+  <dt>2019</dt>
+  <dd>
+    <span class="where">BrowserStack</span>, <span class="what">Security Engineer, Mumbai</span>
+    <p>
+      One of the first hires on a new security team. Built application security from scratch: the
+      company's first asset inventory, threat modelling and review process, red-team testing of
+      production applications, continuous monitoring of public sources for leaked source code and
+      credentials, and the team's first detection capability (Wazuh).
+    </p>
+  </dd>
+
+  <dt>2018 - 2019</dt>
+  <dd>
+    <span class="where">Google Summer of Code</span>, OWASP Juice Shop, <span class="what">Student (2018), Mentor (2019)</span>
+    <p>
+      Extended OWASP's flagship deliberately-vulnerable application with 11 new challenges
+      (SSTI, SSRF, NoSQL injection, mass assignment, HTTP parameter pollution, XSSi, race conditions,
+      Zip-Slip), each backed by working e-commerce features and tests
+      (<a href="https://blog.shoebpatel.com/2018/08/05/OWASP-Juice-Shop-Challenge-Pack-2018-GSoC-project-report/">project report</a>).
+      Returned as a mentor the following year.
+    </p>
+  </dd>
+
+  <dt>2015 - 2019</dt>
+  <dd>
+    <span class="where">National Institute of Technology Goa</span>, <span class="what">B.Tech. in Computer Science and Engineering</span>
+  </dd>
+
+</dl>
+
+
+<h2 id="writing">Writing and research</h2>
+
+<dl class="cv compact">
+  <dt>2022</dt>
+  <dd><a href="https://research.shoebpatel.com/2022/07/27/Automata-A-General-Purpose-Automation-Platform/">Automata: a general-purpose automation platform</a>.
+      <span class="venue">Reconnaissance and continuous leak monitoring at scale.</span></dd>
+
+  <dt>2022</dt>
+  <dd><a href="https://blog.flipkart.tech/how-flipkart-reacts-to-security-vulnerabilities-17dae9b0661e">How Flipkart reacts to security vulnerabilities</a>.
+      <span class="venue">Flipkart Tech Blog (<a href="https://research.shoebpatel.com/2022/04/19/How-Flipkart-Reacts-to-Security-Vulnerabilities/">mirror</a>). The vulnerability feedback loop described above.</span></dd>
+
+  <dt>2021</dt>
+  <dd><a href="https://blog.shoebpatel.com/2021/01/23/The-Secret-Parameter-LFR-and-Potential-RCE-in-NodeJS-Apps/">Collision: the secret parameter, LFR and RCE in Node.js apps</a>.
+      <span class="venue">Assigned <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-32817">CVE-2021-32817</a>.</span></dd>
+
+  <dt>2021</dt>
+  <dd>Server-side request forgery in Baserow.
+      <span class="venue">Assigned <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-22255">CVE-2021-22255</a>.</span></dd>
+
+  <dt>2020</dt>
+  <dd><a href="https://blog.shoebpatel.com/2020/05/18/DefCon-CTF-2020-HTTP-Desync-between-HAProxy-Gunicorn/">HTTP desync between HAProxy and Gunicorn</a>.
+      <span class="venue">DEF CON CTF Qualifiers 2020.</span></dd>
+
+  <dt>2018</dt>
+  <dd><a href="https://blog.shoebpatel.com/2018/08/05/OWASP-Juice-Shop-Challenge-Pack-2018-GSoC-project-report/">OWASP Juice Shop challenge pack</a>.
+      <span class="venue">Google Summer of Code 2018 project report.</span></dd>
+</dl>
+
+<p class="note" style="margin-top:0.9rem">
+  Older CTF write-ups and notes are on the <a href="https://blog.shoebpatel.com/">archived blog</a>.
+</p>
+
+
+<h2 id="research">Vulnerability research and open source</h2>
+
+<p>
+Reported vulnerabilities to 30+ organisations, including Google, Amazon Web Services, the U.S.
+Department of Defense, GitHub Security Lab (CodeQL), Oracle, Intel and Mastercard. Every report
+accepted as valid; maximum signal rating on
+<a href="https://hackerone.com/silentecho_">HackerOne</a> and
+<a href="https://bugcrowd.com/Shoeb_">Bugcrowd</a>.
+</p>
+
+<p>
+Open-source contributions:
+<a href="https://github.com/juice-shop/juice-shop/pulls?q=is%3Apr+author%3Ashoebpate1+is%3Amerged">OWASP Juice Shop</a>
+(19 merged pull requests, mostly the GSoC challenge pack),
+<a href="https://github.com/zaproxy/zaproxy/pull/4410">OWASP ZAP</a> (XSLT injection scanner),
+<a href="https://github.com/codingo/NoSQLMap/pull/71">NoSQLMap</a>,
+<a href="https://github.com/codingo/Reconnoitre/pull/67">Reconnoitre</a> and
+<a href="https://github.com/projectdiscovery/subfinder/pull/148">Subfinder</a> (Urlscan passive source).
+</p>
+
+
+<h2 id="service">Community and teaching</h2>
+
+<dl class="cv compact">
+  <dt>2025 - present</dt>
+  <dd>Author and instructor, application security course for apprentice engineers, Amazon Corporate Technology.</dd>
+  <dt>2019 - 2022</dt>
+  <dd>Organiser and challenge author, twice-yearly internal CTF, Flipkart.</dd>
+  <dt>2020</dt>
+  <dd>CTF organiser and challenge writer, <a href="https://bsidesahmedabad.in/">BSides Ahmedabad</a>.</dd>
+  <dt>2019 - 2021</dt>
+  <dd>Founder and captain, <a href="https://ctftime.org/team/60327/">UnderDawgs</a> CTF team.</dd>
+  <dt>2019</dt>
+  <dd>Mentor, Google Summer of Code (OWASP Juice Shop).</dd>
+</dl>
+
+
+<h2 id="news">News</h2>
+
+<dl class="cv compact">
+  <dt>Jul 2025</dt><dd>Moved within Amazon to the Corporate Technology security team.</dd>
+  <dt>Oct 2022</dt><dd>Joined AWS in London as an application security engineer for the networking services.</dd>
+  <dt>Jul 2022</dt><dd>Published <a href="https://research.shoebpatel.com/2022/07/27/Automata-A-General-Purpose-Automation-Platform/">Automata</a>.</dd>
+  <dt>Apr 2022</dt><dd><a href="https://research.shoebpatel.com/2022/04/19/How-Flipkart-Reacts-to-Security-Vulnerabilities/">How Flipkart reacts to security vulnerabilities</a> published on the Flipkart Tech Blog.</dd>
+  <dt>Aug 2021</dt><dd>Promoted to Senior Security Engineer at Flipkart.</dd>
+  <dt>2021</dt><dd>Assigned CVE-2021-32817 and CVE-2021-22255.</dd>
+  <dt>Jun 2020</dt><dd>Organised the CTF at BSides Ahmedabad.</dd>
+  <dt>Oct 2019</dt><dd>Joined Flipkart, Bangalore.</dd>
+  <dt>Jun 2019</dt><dd>Joined BrowserStack, Mumbai.</dd>
+  <dt>Apr 2019</dt><dd>Graduated from NIT Goa with a B.Tech. in Computer Science.</dd>
+  <dt>Apr 2018</dt><dd>Selected for Google Summer of Code with OWASP Juice Shop.</dd>
+</dl>
+
+
+<h2 id="misc">Miscellany</h2>
+
+<ul class="plain">
+  <li><a href="books.html">Books</a>: a reading list with ratings and short notes.</li>
+  <li>Online I have long gone by <em>CaptainFreak</em>; older material lives under that name.</li>
+</ul>
+
+</main>
+
+<footer>
+  <p>Last updated August 2026. Hand-written HTML and CSS. No frameworks, no analytics, no tracking; the only script is the theme switch.</p>
+</footer>
+
+<script>
+  document.getElementById('theme-toggle').addEventListener('click', function (e) {
+    e.preventDefault();
+    var root = document.documentElement;
+    var current = root.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+</script>
+</body>
 </html>

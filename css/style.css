@@ -1,0 +1,210 @@
+/* shoebpatel.com - plain, text-first stylesheet. No frameworks. */
+
+:root {
+  --bg: #f6f1e7;        /* warm paper, not white */
+  --fg: #1f1c17;
+  --muted: #6f685d;
+  --rule: #ddd5c6;
+  --link: #22508f;
+  --link-hover: #123467;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+}
+
+/* Dark palette: applied by OS preference unless the reader chose a theme, or when they chose dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111213;
+    --fg: #e6e6e6;
+    --muted: #9a9a9a;
+    --rule: #2c2c2c;
+    --link: #8ab4f8;
+    --link-hover: #b7d0fb;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111213;
+  --fg: #e6e6e6;
+  --muted: #9a9a9a;
+  --rule: #2c2c2c;
+  --link: #8ab4f8;
+  --link-hover: #b7d0fb;
+}
+:root { color-scheme: light dark; }
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"]  { color-scheme: dark; }
+
+/* Theme switch: a small sun/moon icon button in the nav */
+.theme-toggle {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: -3px;
+  cursor: pointer;
+  color: var(--muted);
+  line-height: 0;
+}
+.theme-toggle:hover { color: var(--fg); }
+.theme-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 3px; }
+.theme-toggle .when-dark  { display: none; }
+.theme-toggle .when-light { display: inline; }
+:root[data-theme="dark"] .theme-toggle .when-dark  { display: inline; }
+:root[data-theme="dark"] .theme-toggle .when-light { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .when-dark  { display: inline; }
+  :root:not([data-theme="light"]) .theme-toggle .when-light { display: none; }
+}
+.no-js .theme-toggle { display: none; }
+
+* { box-sizing: border-box; }
+
+html { font-size: 17px; }
+
+body {
+  margin: 0;
+  padding: 3.5rem 1.25rem 4rem;
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--serif);
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--link-hover); }
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  margin: 0 0 0.15rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 2.75rem 0 0.9rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.4rem;
+}
+
+p { margin: 0 0 1rem; }
+
+/* Header (headshot is optional; layout works with or without it) */
+header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; }
+header .header-text { min-width: 0; }
+header .headshot {
+  order: 2;
+  flex: 0 0 auto;
+  width: 130px; height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+header .role   { margin: 0; color: var(--fg); }
+header .place  { margin: 0 0 0.9rem; color: var(--muted); }
+header nav a   { margin-right: 0.9rem; white-space: nowrap; }
+header nav     { font-size: 0.95rem; }
+
+/* Two-column "date | entry" lists, as used on academic CVs */
+dl.cv {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  column-gap: 1.25rem;
+  row-gap: 0.85rem;
+  margin: 0;
+}
+dl.cv dt {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding-top: 0.25rem;
+  white-space: nowrap;
+}
+dl.cv dd { margin: 0; }
+dl.cv dd .where { font-weight: 600; }
+dl.cv dd .what  { color: var(--muted); }
+dl.cv dd p { margin: 0.3rem 0 0; }
+dl.cv dd p + p { margin-top: 0.4rem; }
+dl.cv dd ul { margin: 0.35rem 0 0 1.1rem; padding: 0; }
+dl.cv dd li { margin: 0.2rem 0; }
+
+dl.cv.compact { row-gap: 0.45rem; }
+dl.cv.compact dt { padding-top: 0.15rem; }
+
+@media (max-width: 560px) {
+  html { font-size: 16px; }
+  body { padding-top: 2.25rem; }
+  header .headshot { width: 96px; height: 96px; }
+  dl.cv { grid-template-columns: 1fr; row-gap: 0.25rem; }
+  dl.cv dt { padding-top: 0; }
+  dl.cv dd { margin-bottom: 0.9rem; }
+  dl.cv.compact dd { margin-bottom: 0.5rem; }
+}
+
+ul.plain { list-style: none; padding: 0; margin: 0; }
+ul.plain li { margin: 0.35rem 0; }
+
+.venue { color: var(--muted); }
+.note  { color: var(--muted); font-size: 0.9rem; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+footer p { margin: 0.25rem 0; }
+
+/* Books page */
+table.books {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+table.books th,
+table.books td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+table.books th {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+table.books td.rating { font-family: var(--mono); white-space: nowrap; letter-spacing: 0.05em; }
+table.books td.notes  { color: var(--muted); }
+
+abbr[title] { text-decoration: none; }
+
+/* Books table: stack each row as a block on narrow screens */
+@media (max-width: 640px) {
+  table.books, table.books tbody, table.books tr, table.books td { display: block; width: 100%; }
+  table.books thead { display: none; }
+  table.books tr { padding: 0.6rem 0; border-bottom: 1px solid var(--rule); }
+  table.books td { border: 0; padding: 0.1rem 0; }
+  table.books td:first-child { font-weight: 600; }
+  table.books td.rating { color: var(--muted); }
+  table.books td.rating::before { content: attr(data-label) ": "; font-family: var(--serif); letter-spacing: 0; }
+  table.books td.notes:empty { display: none; }
+}
